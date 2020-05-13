@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      routes:
+        - id: web-service
+          uri: lb://web-service
+          predicates:
+            - Path=/api/web/**
+          filters:
+            - StripPrefix=2
+        - id: biz-service
+          uri: lb://biz-service
+          predicates:
+            - Path=/api/biz/**
+          filters:
+            - StripPrefix=2
