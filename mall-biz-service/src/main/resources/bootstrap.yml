@@ -6,9 +6,28 @@ spring:
     name: biz-service
 server:
   port: 8081
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  configuration:
+    cache-enabled: true
+    map-underscore-to-camel-case: true
+    default-statement-timeout: 3000
+
+logging:
+  level:
+    com.jamessu712: debug
+
 ---
 spring:
   profiles: docker
   cloud:
     config:
       uri: http://config-server:8888
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  configuration:
+    cache-enabled: true
+    map-underscore-to-camel-case: true
+    default-statement-timeout: 3000

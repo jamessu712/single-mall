@@ -295,3 +295,7 @@ hs_err_pid*
 .idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml
 .idea/libraries/Maven__stax_stax_api_1_0_1.xml
 .idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml
+.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml
+.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml
+.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml
+.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml

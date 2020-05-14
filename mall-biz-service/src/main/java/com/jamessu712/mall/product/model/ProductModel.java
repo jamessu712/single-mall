@@ -1,4 +1,5 @@
-package com.jamessu712.mall.product.dto;
+package com.jamessu712.mall.product.model;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,10 +7,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class ProductDTO {
+public class ProductModel {
+
     private String code;
     private String name;
     private String description;
