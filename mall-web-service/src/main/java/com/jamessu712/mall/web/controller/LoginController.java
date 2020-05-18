@@ -32,7 +32,7 @@ public class LoginController {
         mv.setViewName("index");
         mv.addObject("token", token);
 
-        log.info("sid =================== " + request.getSession().getId());
+        log.debug("sid =================== " + request.getSession().getId());
 
         return mv;
     }

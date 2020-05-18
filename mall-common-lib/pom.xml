@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jamessu712</groupId>
+    <artifactId>mall-common-lib</artifactId>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>com.jamessu712</groupId>
+        <artifactId>single-mall</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <properties>
+        <docker.image.exposed.port>8081</docker.image.exposed.port>
+        <docker.image.dockerfile.dir>${basedir}/../docker</docker.image.dockerfile.dir>
+        <mybatis.version>1.3.2</mybatis.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- Spring Boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring Cloud -->
+
+
+        <!-- Third parties -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+
+        <!-- Testing -->
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>buildDocker</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.spotify</groupId>
+                        <artifactId>docker-maven-plugin</artifactId>
+                        <version>${docker.plugin.version}</version>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

@@ -17,9 +17,10 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>mall-common-lib</module>
         <module>cloud-admin-server</module>
-        <module>mall-web-service</module>
         <module>mall-biz-service</module>
+        <module>mall-web-service</module>
         <module>cloud-config-server</module>
         <module>cloud-discovery-server</module>
         <module>cloud-gateway-server</module>
@@ -68,6 +69,12 @@
                 <scope>test</scope>
             </dependency>
 
+            <!-- modules of single-mall -->
+            <dependency>
+                <groupId>com.jamessu712</groupId>
+                <artifactId>mall-common-lib</artifactId>
+                <version>1.0.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

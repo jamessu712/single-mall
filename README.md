@@ -6,12 +6,12 @@
 * 单体微服务 - https://github.com/jamessu712/single-mall
 
 ##### 编译
-* mvn clean install -DskipTests
-* mvn clean install -PbuildDocker
+* `mvn clean install -DskipTests`
+* `mvn clean install -PbuildDocker`
 
 ##### 启动
-* docker-compose up
-* docker-compose down
+* `docker-compose up`
+* `docker-compose down`
 
 
 ##### 环境
@@ -23,3 +23,10 @@
 * Admin Server (Spring Boot Admin) - http://localhost:9090
 * Grafana Dashboards - http://localhost:3000
 * Prometheus - http://localhost:9091
+
+
+##### 参考命令
+- 查看docker-compose当前运行容器
+    - `docker-compose ps`
+- docker删除所有none镜像 - docker rmi 
+    - `docker images | grep  "<none>" | awk '{print $3}'`

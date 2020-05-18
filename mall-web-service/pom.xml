@@ -7,7 +7,6 @@
     <groupId>com.jamessu712</groupId>
     <artifactId>mall-web-service</artifactId>
     <packaging>jar</packaging>
-    <description>Spring PetClinic API Gateway</description>
 
     <parent>
         <groupId>com.jamessu712</groupId>
@@ -27,8 +26,12 @@
     </properties>
 
     <dependencies>
-
         <!-- Spring Boot -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -48,16 +51,17 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
 
         <!-- Spring Cloud -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-openfeign</artifactId>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-sleuth-zipkin</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId>
@@ -156,6 +160,18 @@
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>mockwebserver</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- modules of single-mall -->
+        <!--<dependency>-->
+            <!--<groupId>com.jamessu712</groupId>-->
+            <!--<artifactId>mall-biz-service</artifactId>-->
+            <!--<version>1.0.0</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>com.jamessu712</groupId>
+            <artifactId>mall-common-lib</artifactId>
         </dependency>
     </dependencies>
 

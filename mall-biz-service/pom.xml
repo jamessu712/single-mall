@@ -7,7 +7,6 @@
     <groupId>com.jamessu712</groupId>
     <artifactId>mall-biz-service</artifactId>
     <packaging>jar</packaging>
-    <description>Spring PetClinic Customers Service</description>
 
     <parent>
         <groupId>com.jamessu712</groupId>
@@ -104,6 +103,12 @@
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- modules of single-mall -->
+        <dependency>
+            <groupId>com.jamessu712</groupId>
+            <artifactId>mall-common-lib</artifactId>
         </dependency>
     </dependencies>
 
