@@ -5,6 +5,20 @@ spring:
 #      profile: local
   application:
     name: biz-service
+  datasource:
+   druid:
+     url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&serverTimezone=UTC
+     username: root
+     password: root
+     driverClassName: com.mysql.jdbc.Driver
+     initialSize: 5
+     minIdle: 5
+     maxActive: 20
+     maxWait: 10000
+     testOnBorrow: true
+     testOnReturn: false
+     timeBetweenEvictionRunsMillis: 60000
+     minEvictableIdleTimeMillis: 300000
 server:
   port: 8081
 
@@ -14,7 +28,6 @@ mybatis:
     cache-enabled: true
     map-underscore-to-camel-case: true
     default-statement-timeout: 3000
-
 
 ---
 #spring:
