@@ -7,13 +7,13 @@ spring:
     name: biz-service
   datasource:
    druid:
-     url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&serverTimezone=UTC
+     url: jdbc:mysql://localhost:3306/single_mall_db?characterEncoding=utf-8&serverTimezone=UTC
      username: root
      password: root
      driverClassName: com.mysql.jdbc.Driver
      initialSize: 5
      minIdle: 5
-     maxActive: 20
+     maxActive: 500
      maxWait: 10000
      testOnBorrow: true
      testOnReturn: false

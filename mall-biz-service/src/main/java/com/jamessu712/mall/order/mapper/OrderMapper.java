@@ -14,4 +14,6 @@ import org.apache.ibatis.annotations.Mapper;
 public interface OrderMapper{
 
     OrderModel getOrderByCode(String code);
+
+    int  insertOrder(OrderModel orderModel);
 }

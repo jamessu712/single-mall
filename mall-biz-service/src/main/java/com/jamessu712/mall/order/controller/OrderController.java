@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 /**
  * @ClassName OrderController
  * @Description TODO
@@ -29,5 +32,13 @@ public class OrderController{
         return orderModel;
     }
 
-
+    @RequestMapping(value = "/createOrder", method = RequestMethod.GET)
+    public int createOrder() {
+        OrderModel orderModel = new OrderModel();
+        orderModel.setCode("00001");
+        BigDecimal totalPrice = new BigDecimal(100);
+        orderModel.setTotalPrice(totalPrice);
+        int Result = orderService.insertOrder(orderModel);
+        return Result;
+    }
 }

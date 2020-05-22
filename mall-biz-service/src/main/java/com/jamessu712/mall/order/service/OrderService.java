@@ -25,5 +25,11 @@ public class OrderService {
         return orderMapper.getOrderByCode(code);
     }
 
+    public int insertOrder(OrderModel orderModel){
+        log.info("创建订单行【orderCode】= {}",orderModel.getCode());
+        orderMapper.insertOrder(orderModel);
+        return 1;
+    }
+
 
 }

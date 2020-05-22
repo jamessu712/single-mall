@@ -6,5 +6,7 @@
     <select id="getOrderByCode" resultType="com.jamessu712.mall.order.model.OrderModel">
         select * from tbl_order where code = #{code}
     </select>
-
+    <insert id="insertOrder" parameterType="com.jamessu712.mall.order.model.OrderModel" keyProperty="pk" useGeneratedKeys="true">
+        INSERT INTO tbl_order (pk,creationTime,modifiedTime,code,totalPrice) VALUES (#{pk},#{creationTime},#{modifiedTime},#{code},#{totalPrice});
+    </insert>
 </mapper>
