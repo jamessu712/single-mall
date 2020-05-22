@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jamessu712.mall.order.mapper.OrderMapper">
+    <select id="getOrderByCode" resultType="com.jamessu712.mall.order.model.OrderModel">
+        select * from tbl_order where code = #{code}
+    </select>
+
+</mapper>

@@ -1,6 +1,5 @@
 package com.jamessu712.mall.product.controller;
 
-import com.jamessu712.mall.product.dto.ProductDTO;
 import com.jamessu712.mall.product.model.ProductModel;
 import com.jamessu712.mall.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +20,5 @@ public class ProductController {
     public ProductModel getProductByCode(@PathVariable final String productCode) {
         ProductModel productModel = productService.getProductByCode(productCode);
         return productModel;
-
-//        ProductDTO productDTO = new ProductDTO();
-//        productDTO.setCode("00001");
-//        productDTO.setName("huawei p30");
-//        return productDTO;
     }
 }

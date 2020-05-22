@@ -56,7 +56,7 @@ spring:
   datasource:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
-    url: jdbc:mysql://localhost:3306/petclinic?useSSL=false
+    url: jdbc:mysql://localhost:3306/single_mall_db?useSSL=false
     username: root
-    password: petclinic
+    password: root
     initialization-mode: ALWAYS

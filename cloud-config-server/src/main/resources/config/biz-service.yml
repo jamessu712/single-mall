@@ -1,8 +1,15 @@
 ﻿spring:
   profiles: default
   datasource:
-    schema: classpath*:db/hsqldb/schema.sql
-    data: classpath*:db/hsqldb/data.sql
+#    schema: classpath*:db/hsqldb/schema.sql
+#    data: classpath*:db/hsqldb/data.sql
+    schema: classpath*:db/mysql/schema.sql
+    data: classpath*:db/mysql/data.sql
+    url: jdbc:mysql://localhost:3306/single_mall_db?useSSL=false
+    username: root
+    password: root
+    initialization-mode: ALWAYS
+
 #  sleuth:
 #    sampler:
 #      percentage: 1.0
