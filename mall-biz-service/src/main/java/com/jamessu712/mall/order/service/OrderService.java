@@ -1,7 +1,7 @@
 package com.jamessu712.mall.order.service;
 
 import com.jamessu712.mall.order.mapper.OrderMapper;
-import com.jamessu712.mall.order.model.OrderModel;
+import com.jamessu712.mall.web.api.model.OrderModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,6 +30,5 @@ public class OrderService {
         orderMapper.insertOrder(orderModel);
         return 1;
     }
-
 
 }

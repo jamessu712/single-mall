@@ -115,6 +115,11 @@
             <groupId>com.jamessu712</groupId>
             <artifactId>mall-common-lib</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.jamessu712</groupId>
+            <artifactId>mall-web-service</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
     <profiles>
