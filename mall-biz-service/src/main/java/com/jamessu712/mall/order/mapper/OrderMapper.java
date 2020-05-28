@@ -1,7 +1,7 @@
 package com.jamessu712.mall.order.mapper;
 
 
-import com.jamessu712.mall.web.api.model.OrderModel;
+import com.jamessu712.mall.common.model.OrderModel;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

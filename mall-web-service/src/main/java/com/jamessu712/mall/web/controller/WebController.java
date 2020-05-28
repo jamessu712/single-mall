@@ -6,7 +6,7 @@ import com.jamessu712.mall.common.cache.redis.RedisUtil;
 
 import com.jamessu712.mall.web.api.client.ProductServiceClient;
 import com.jamessu712.mall.web.api.dto.ProductDTO;
-import com.jamessu712.mall.web.api.model.OrderModel;
+import com.jamessu712.mall.common.model.OrderModel;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

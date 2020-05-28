@@ -1,7 +1,7 @@
 package com.jamessu712.mall.order.consumer;
 
 import com.jamessu712.mall.order.service.OrderService;
-import com.jamessu712.mall.web.api.model.OrderModel;
+import com.jamessu712.mall.common.model.OrderModel;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
